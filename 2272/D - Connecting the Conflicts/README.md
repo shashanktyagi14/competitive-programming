@@ -1,0 +1,28 @@
+<h2><a href="https://codeforces.com/contest/2272/problem/D" target="_blank" rel="noopener noreferrer">2272D — Connecting the Conflicts</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | Unrated |
+| **Language** | C++17 (GCC 7-32) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2272D](https://codeforces.com/contest/2272/problem/D) |
+
+## Topics
+`brute force` `constructive algorithms` `dfs and similar` `dp`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">D. Connecting the Conflicts</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>  </p><p>A tree is a connected graph without cycles. Define an <a href="https://en.wikipedia.org/wiki/Independent_set_(graph_theory)">independent set</a> of a tree as a set of vertices such that no two distinct vertices in the set are directly connected by an edge in the tree. A maximum independent set is an independent set that contains the largest possible number of vertices.</p><p>Given a forest of $$$k$$$ trees, we want to add $$$k-1$$$ edges to unite the forest into a single tree so as to maximize the size of the maximum independent set of the resulting tree. Please find the additional edges.</p><p>If there are several valid answers, you may output any of them.</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 10^4$$$). The description of the test cases follows.</p><p>The first line of each test case contains a single integer $$$k$$$ ($$$2 \le k \le 2 \cdot 10^5$$$) — the number of trees in the forest.</p><p>This is followed by a description of each of the $$$k$$$ trees, which are numbered $$$1, 2, \ldots, k$$$ in order:</p><p>The first line contains a single integer $$$n$$$ ($$$1\le n \le 2 \cdot 10^5$$$) — the size of the tree. The vertices of the tree are numbered with integers from $$$1$$$ to $$$n$$$.</p><p>Each of the next $$$n-1$$$ lines contains two integers $$$u$$$ and $$$v$$$ ($$$1 \le u,v \le n$$$, $$$u \ne v$$$), denoting an edge between vertices $$$u$$$ and $$$v$$$. It is guaranteed that the given edges form a tree.</p><p>It is guaranteed that the sum of $$$k$$$ over all test cases does not exceed $$$2 \cdot 10^5$$$.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \cdot 10^5$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output $$$k-1$$$ lines; each line contains four integers $$$t_1, v_1, t_2, v_2$$$, denoting an edge between $$$(t_1,v_1)$$$ and $$$(t_2,v_2)$$$ that is added to the original graph.</p><p>Note that we number all $$$k$$$ trees from $$$1$$$ to $$$k$$$ in the order in which they appear in the input data. For any tree $$$i$$$ ($$$1\le i \le k$$$), if it contains $$$n$$$ nodes, then its nodes are numbered from $$$1$$$ to $$$n$$$. The $$$j$$$-th node in this tree is denoted by $$$(i,j)$$$.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0023937264093066157" id="id0013284092213782317" class="input-output-copier">Copy</div></div><pre data-content="2
+2
+1
+1
+2
+3
+1 2
+1 3
+1
+" id="id0023937264093066157"><div class="test-example-line test-example-line-even test-example-line-0">2</div><div class="test-example-line test-example-line-odd test-example-line-1">2</div><div class="test-example-line test-example-line-odd test-example-line-1">1</div><div class="test-example-line test-example-line-odd test-example-line-1">1</div><div class="test-example-line test-example-line-even test-example-line-2">2</div><div class="test-example-line test-example-line-even test-example-line-2">3</div><div class="test-example-line test-example-line-even test-example-line-2">1 2</div><div class="test-example-line test-example-line-even test-example-line-2">1 3</div><div class="test-example-line test-example-line-even test-example-line-2">1</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id006427180791188258" id="id003069442076047011" class="input-output-copier">Copy</div></div><pre data-content="2 1 1 1
+2 1 1 1
+" id="id006427180791188258"><div class="test-example-line test-example-line-odd test-example-line-1">2 1 1 1</div><div class="test-example-line test-example-line-even test-example-line-2">2 1 1 1</div></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, the graph has two vertices and no edge; adding an edge between these two nodes is the only way to turn the graph into a tree.</p><p>In the second test case, we can add an edge between the only vertex $$$1$$$ of tree $$$2$$$ and one of the vertices $$$1$$$, $$$2$$$, and $$$3$$$ of tree $$$1$$$.</p><ul><li> add edge $$$(2,1)-(1,1)$$$, the size of a maximum independent set of the resulting tree is 3. </li><li> add edge $$$(2,1)-(1,2)$$$, the size of a maximum independent set of the resulting tree is 2. </li><li> add edge $$$(2,1)-(1,3)$$$, the size of a maximum independent set of the resulting tree is 2.</li></ul><p>So, we choose the edge $$$(2,1)-(1,1)$$$ since it is optimal.</p></div>
