@@ -1,0 +1,22 @@
+<h2><a href="https://codeforces.com/contest/2278/problem/B" target="_blank" rel="noopener noreferrer">2278B — Stakes and Shapes</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | Unrated |
+| **Language** | C++17 (GCC 7-32) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2278B](https://codeforces.com/contest/2278/problem/B) |
+
+## Topics
+`constructive algorithms` `greedy`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">B. Stakes and Shapes</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Alice and Bob are playing the <span class="tex-font-style-it">Rock, Scissors, Paper</span> game.</p><p>The game consists of multiple rounds. In each round, the player must choose one of the three possible outcomes: Rock, Scissors, or Paper. The rules for each round are as follows:</p><ul> <li> Rock beats Scissors; </li><li> Scissors beats Paper; </li><li> Paper beats Rock; </li><li> If both players choose the same outcome, the round ends in a draw. </li></ul><p>It is given that the game consists of exactly $$$x+y+z$$$ rounds. Also, Bob knows that Alice will play Rock exactly $$$x$$$ times, Scissors exactly $$$y$$$ times, and Paper exactly $$$z$$$ times. However, Bob does not know the order of Alice's outcomes.</p><p>Before the game starts, Bob must choose all of his outcomes in advance. Help him find an optimal sequence of $$$x+y+z$$$ outcomes such that, regardless of the order of Alice's outcomes, the number of rounds won by Bob is <span class="tex-font-style-bf">at least</span> the number of rounds won by Alice.</p><p>It is guaranteed that such a sequence always exists.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line of the input contains a single integer $$$t$$$ ($$$1 \le t \le 1000$$$) — the number of test cases. The description of each test case follows.</p><p>The only line of each test case contains three space-separated integers $$$x$$$, $$$y$$$, and $$$z$$$ ($$$0 \le x,y,z \le 100$$$; $$$x+y+z \gt 0$$$) — the number of times Alice will play Rock, Scissors, and Paper, respectively.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Print a string $$$s$$$ of length $$$x+y+z$$$ consisting only of the characters <span class="tex-font-style-tt">R</span>, <span class="tex-font-style-tt">S</span>, and <span class="tex-font-style-tt">P</span>. The $$$i$$$-th character $$$s_i$$$ represents Bob's move in the $$$i$$$-th round: <span class="tex-font-style-tt">R</span> for Rock, <span class="tex-font-style-tt">S</span> for Scissors, and <span class="tex-font-style-tt">P</span> for Paper.</p><p>The output string $$$s$$$ must satisfy the required condition. If multiple valid answers exist, output any one of them.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id007566332452577187" id="id009676010854291449" class="input-output-copier">Copy</div></div><pre data-content="2
+0 0 3
+1 1 2
+" id="id007566332452577187"><div class="test-example-line test-example-line-even test-example-line-0">2</div><div class="test-example-line test-example-line-odd test-example-line-1">0 0 3</div><div class="test-example-line test-example-line-even test-example-line-2">1 1 2</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id005791289516096967" id="id007472561652484546" class="input-output-copier">Copy</div></div><pre data-content="RPS
+SPSS
+" id="id005791289516096967"><div class="test-example-line test-example-line-odd test-example-line-1">RPS</div><div class="test-example-line test-example-line-even test-example-line-2">SPSS</div></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, Alice can only play Paper in all three rounds.</p><p>Bob chooses <span class="tex-font-style-tt">RPS</span>. Thus, Bob loses once with Rock, wins once with Scissors, and draws once with Paper. Therefore, Bob wins $$$1$$$ round and Alice wins $$$1$$$ round, so the required condition is satisfied.</p></div>
