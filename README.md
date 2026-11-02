@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 26 | 20 |
+| 27 | 20 |
 
 ---
 
@@ -17,10 +17,10 @@
 - [brute force](#brute-force) (5)
 - [combinatorics](#combinatorics) (3)
 - [constructive algorithms](#constructive-algorithms) (8)
-- [data structures](#data-structures) (1)
-- [dfs and similar](#dfs-and-similar) (4)
+- [data structures](#data-structures) (2)
+- [dfs and similar](#dfs-and-similar) (5)
 - [dp](#dp) (9)
-- [dsu](#dsu) (1)
+- [dsu](#dsu) (2)
 - [games](#games) (2)
 - [graphs](#graphs) (1)
 - [greedy](#greedy) (15)
@@ -30,7 +30,7 @@
 - [number theory](#number-theory) (4)
 - [sortings](#sortings) (1)
 - [strings](#strings) (2)
-- [trees](#trees) (3)
+- [trees](#trees) (4)
 - [two pointers](#two-pointers) (1)
 
 ---
@@ -87,6 +87,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
+| 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
 
 ### dfs and similar
 
@@ -95,6 +96,7 @@
 | 2272D | [Connecting the Conflicts](https://codeforces.com/contest/2272/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/D%20-%20Connecting%20the%20Conflicts/solution.cpp) |
 | 2272F | [Tree Reduction Game](https://codeforces.com/contest/2272/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/F%20-%20Tree%20Reduction%20Game/solution.cpp) |
 | 2277C | [Edge Addeleting](https://codeforces.com/contest/2277/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/C%20-%20Edge%20Addeleting/solution.cpp) |
+| 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
 
 ### dp
@@ -116,6 +118,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+| 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
 
 ### games
 
@@ -205,6 +208,7 @@
 |---|---------|------------|----------|
 | 2272F | [Tree Reduction Game](https://codeforces.com/contest/2272/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/F%20-%20Tree%20Reduction%20Game/solution.cpp) |
 | 2277C | [Edge Addeleting](https://codeforces.com/contest/2277/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/C%20-%20Edge%20Addeleting/solution.cpp) |
+| 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
 
 ### two pointers
