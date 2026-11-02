@@ -6,38 +6,136 @@
 
 | Total Problems | Topics |
 |---|---|
-| 1 | 6 |
+| 16 | 19 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [bitmasks](#bitmasks) (1)
-- [dfs and similar](#dfs-and-similar) (1)
-- [dp](#dp) (1)
+- [binary search](#binary-search) (3)
+- [bitmasks](#bitmasks) (2)
+- [brute force](#brute-force) (4)
+- [combinatorics](#combinatorics) (3)
+- [constructive algorithms](#constructive-algorithms) (5)
+- [data structures](#data-structures) (1)
+- [dfs and similar](#dfs-and-similar) (4)
+- [dp](#dp) (7)
+- [dsu](#dsu) (1)
+- [games](#games) (2)
+- [graphs](#graphs) (1)
+- [greedy](#greedy) (10)
 - [hashing](#hashing) (1)
-- [number theory](#number-theory) (1)
-- [trees](#trees) (1)
+- [implementation](#implementation) (1)
+- [math](#math) (3)
+- [number theory](#number-theory) (2)
+- [strings](#strings) (1)
+- [trees](#trees) (3)
+- [two pointers](#two-pointers) (1)
 
 ---
+
+### binary search
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
+| 2272E | [Memory Cell Interception](https://codeforces.com/contest/2272/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/E%20-%20Memory%20Cell%20Interception/solution.cpp) |
+| 2277D1 | [Number Operating (Easy Version)](https://codeforces.com/contest/2277/problem/D1) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/D1%20-%20Number%20Operating%20(Easy%20Version)/solution.cpp) |
 
 ### bitmasks
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2277D1 | [Number Operating (Easy Version)](https://codeforces.com/contest/2277/problem/D1) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/D1%20-%20Number%20Operating%20(Easy%20Version)/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
+
+### brute force
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2272A | [Maximize One MEX](https://codeforces.com/contest/2272/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/A%20-%20Maximize%20One%20MEX/solution.cpp) |
+| 2272D | [Connecting the Conflicts](https://codeforces.com/contest/2272/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/D%20-%20Connecting%20the%20Conflicts/solution.cpp) |
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+| 2277D1 | [Number Operating (Easy Version)](https://codeforces.com/contest/2277/problem/D1) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/D1%20-%20Number%20Operating%20(Easy%20Version)/solution.cpp) |
+
+### combinatorics
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276D | [Caveman](https://codeforces.com/contest/2276/problem/D) | 1400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/D%20-%20Caveman/solution.cpp) |
+| 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
+| 2276G | [Elimination of Players](https://codeforces.com/contest/2276/problem/G) | 2100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/G%20-%20Elimination%20of%20Players/solution.cpp) |
+
+### constructive algorithms
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2272A | [Maximize One MEX](https://codeforces.com/contest/2272/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/A%20-%20Maximize%20One%20MEX/solution.cpp) |
+| 2272B | [Frogs Jump](https://codeforces.com/contest/2272/problem/B) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/B%20-%20Frogs%20Jump/solution.cpp) |
+| 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
+| 2272D | [Connecting the Conflicts](https://codeforces.com/contest/2272/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/D%20-%20Connecting%20the%20Conflicts/solution.cpp) |
+| 2277B | [Sequence Decreasing](https://codeforces.com/contest/2277/problem/B) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/B%20-%20Sequence%20Decreasing/solution.cpp) |
+
+### data structures
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
 
 ### dfs and similar
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2272D | [Connecting the Conflicts](https://codeforces.com/contest/2272/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/D%20-%20Connecting%20the%20Conflicts/solution.cpp) |
+| 2272F | [Tree Reduction Game](https://codeforces.com/contest/2272/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/F%20-%20Tree%20Reduction%20Game/solution.cpp) |
+| 2277C | [Edge Addeleting](https://codeforces.com/contest/2277/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/C%20-%20Edge%20Addeleting/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
 
 ### dp
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
+| 2272D | [Connecting the Conflicts](https://codeforces.com/contest/2272/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/D%20-%20Connecting%20the%20Conflicts/solution.cpp) |
+| 2272F | [Tree Reduction Game](https://codeforces.com/contest/2272/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/F%20-%20Tree%20Reduction%20Game/solution.cpp) |
+| 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+| 2276G | [Elimination of Players](https://codeforces.com/contest/2276/problem/G) | 2100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/G%20-%20Elimination%20of%20Players/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
+
+### dsu
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+
+### games
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2272F | [Tree Reduction Game](https://codeforces.com/contest/2272/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/F%20-%20Tree%20Reduction%20Game/solution.cpp) |
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+
+### graphs
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276D | [Caveman](https://codeforces.com/contest/2276/problem/D) | 1400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/D%20-%20Caveman/solution.cpp) |
+
+### greedy
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2272A | [Maximize One MEX](https://codeforces.com/contest/2272/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/A%20-%20Maximize%20One%20MEX/solution.cpp) |
+| 2272B | [Frogs Jump](https://codeforces.com/contest/2272/problem/B) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/B%20-%20Frogs%20Jump/solution.cpp) |
+| 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
+| 2272E | [Memory Cell Interception](https://codeforces.com/contest/2272/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/E%20-%20Memory%20Cell%20Interception/solution.cpp) |
+| 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+| 2277A | [Subset Selecting](https://codeforces.com/contest/2277/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/A%20-%20Subset%20Selecting/solution.cpp) |
+| 2277B | [Sequence Decreasing](https://codeforces.com/contest/2277/problem/B) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/B%20-%20Sequence%20Decreasing/solution.cpp) |
+| 2277C | [Edge Addeleting](https://codeforces.com/contest/2277/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/C%20-%20Edge%20Addeleting/solution.cpp) |
+| 2277D1 | [Number Operating (Easy Version)](https://codeforces.com/contest/2277/problem/D1) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/D1%20-%20Number%20Operating%20(Easy%20Version)/solution.cpp) |
 
 ### hashing
 
@@ -45,17 +143,46 @@
 |---|---------|------------|----------|
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
 
+### implementation
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+
+### math
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276C | [Subarrays](https://codeforces.com/contest/2276/problem/C) | 1100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/C%20-%20Subarrays/solution.cpp) |
+| 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
+| 2276G | [Elimination of Players](https://codeforces.com/contest/2276/problem/G) | 2100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/G%20-%20Elimination%20of%20Players/solution.cpp) |
+
 ### number theory
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2276C | [Subarrays](https://codeforces.com/contest/2276/problem/C) | 1100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/C%20-%20Subarrays/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
+
+### strings
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
 
 ### trees
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2272F | [Tree Reduction Game](https://codeforces.com/contest/2272/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/F%20-%20Tree%20Reduction%20Game/solution.cpp) |
+| 2277C | [Edge Addeleting](https://codeforces.com/contest/2277/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/C%20-%20Edge%20Addeleting/solution.cpp) |
 | 2278G | [0s and 1s](https://codeforces.com/contest/2278/problem/G) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/G%20-%200s%20and%201s/solution.cpp) |
+
+### two pointers
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2272E | [Memory Cell Interception](https://codeforces.com/contest/2272/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/E%20-%20Memory%20Cell%20Interception/solution.cpp) |
 
 ---
 
