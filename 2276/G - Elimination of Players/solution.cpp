@@ -1,0 +1,170 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+const int MOD = 998244353;
+const int N = 5005;
+ 
+int addmod(int x, int y) {
+    x += y;
+    if (x >= MOD) x -= MOD;
+    if (x < 0) x += MOD;
+    return x;
+}
+ 
+int mul(int x, int y) {
+    return 1LL * x * y % MOD;
+}
+ 
+int sub(int x, int y) {
+    return addmod(x, -y);
+}
+ 
+int binpow(int x, int y) {
+    int z = 1;
+    while (y) {
+        if (y & 1) z = mul(z, x);
+        x = mul(x, x);
+        y >>= 1;
+    }
+    return z;
+}
+ 
+int fact[N], inv[N];
+ 
+void precalc() {
+    fact[0] = 1;
+    for (int i = 1; i < N; i++)
+        fact[i] = mul(i, fact[i - 1]);
+ 
+    for (int i = 1; i < N; i++)
+        inv[i] = binpow(i, MOD - 2);
+}
+ 
+struct Blocks {
+    int n;
+    vector<int> cutoff_pos, pref, pref_G;
+    vector<pair<int, int>> a;
+ 
+    Blocks(int n = 0) : n(n) {}
+ 
+    void rebuild() {
+        pref = {0};
+        pref_G = {0};
+ 
+        vector<bool> used(n, false);
+        vector<pair<int, int>> b;
+        cutoff_pos.assign(n, -1);
+ 
+        int sign = 1;
+        int cnt = n - 1;
+ 
+        for (int i = 0; i < (int)a.size(); i++) {
+            int x = a[i].first;
+            int len = a[i].second;
+ 
+            if (used[x]) break;
+ 
+            used[x] = true;
+            b.push_back({x, len});
+            cutoff_pos[x] = i;
+ 
+            int c = mul(sign, mul(len, fact[cnt]));
+            int cg = mul(sign, mul(len, fact[cnt - 1]));
+ 
+            --cnt;
+            sign = sub(0, sign);
+ 
+            pref.push_back(addmod(pref.back(), c));
+            pref_G.push_back(addmod(pref_G.back(), cg));
+        }
+ 
+        a = b;
+    }
+ 
+    int getF() {
+        return pref.back();
+    }
+ 
+    int getG(int x) {
+        if (cutoff_pos[x] == -1)
+            return pref_G.back();
+        return pref_G[cutoff_pos[x]];
+    }
+ 
+    void append(int x) {
+        if (a.empty() || a[0].first != x)
+            a.insert(a.begin(), {x, 0});
+ 
+        a[0].second++;
+        rebuild();
+    }
+};
+ 
+void solve() {
+    int n;
+    cin >> n;
+ 
+    vector<int> a(n - 1);
+ 
+    for (int i = 0; i < n - 1; i++) {
+        cin >> a[i];
+        --a[i];
+    }
+ 
+    Blocks b(n);
+ 
+    vector<vector<int>> ans(n - 1, vector<int>(n, 0));
+    vector<vector<int>> G(n - 1, vector<int>(n, 0));
+    vector<int> F(n - 1, 0);
+ 
+    for (int i = 0; i < n - 1; i++) {
+        int x = a[i];
+ 
+        b.append(x);
+        F[i] = b.getF();
+ 
+        for (int j = 0; j < n; j++)
+            G[i][j] = b.getG(j);
+ 
+        for (int j = 0; j < n; j++) {
+            if (a[i] == j) continue;
+ 
+            int s = addmod(fact[n - 1], G[i][j]);
+ 
+            if (i > 0) {
+                s = sub(s, G[i - 1][j]);
+ 
+                if (a[i - 1] == j)
+                    s = addmod(s, F[i - 1]);
+            }
+ 
+            ans[i][j] = s;
+        }
+    }
+ 
+    long long res = 0;
+ 
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n; j++) {
+            res ^= 1LL * ans[i][j] * (i + 1) * (j + 1);
+        }
+    }
+ 
+    cout << res << '
+';
+}
+ 
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+ 
+    precalc();
+ 
+    int t;
+    cin >> t;
+ 
+    while (t--)
+        solve();
+ 
+    return 0;
+}
