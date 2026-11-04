@@ -6,13 +6,13 @@
 
 | Total Problems | Topics |
 |---|---|
-| 31 | 22 |
+| 32 | 22 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [Uncategorized](#uncategorized) (2)
+- [Uncategorized](#uncategorized) (3)
 - [binary search](#binary-search) (6)
 - [bitmasks](#bitmasks) (2)
 - [brute force](#brute-force) (6)
@@ -43,6 +43,7 @@
 |---|---------|------------|----------|
 | 2283A | [Numbers on the Board](https://codeforces.com/contest/2283/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/A%20-%20Numbers%20on%20the%20Board/solution.cpp) |
 | 2283B | [Rhythmic String](https://codeforces.com/contest/2283/problem/B) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/B%20-%20Rhythmic%20String/solution.cpp) |
+| 2283C | [Big XOR](https://codeforces.com/contest/2283/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/C%20-%20Big%20XOR/solution.cpp) |
 
 ### binary search
 
