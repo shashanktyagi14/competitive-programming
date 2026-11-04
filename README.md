@@ -6,13 +6,13 @@
 
 | Total Problems | Topics |
 |---|---|
-| 33 | 22 |
+| 34 | 22 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [Uncategorized](#uncategorized) (4)
+- [Uncategorized](#uncategorized) (5)
 - [binary search](#binary-search) (6)
 - [bitmasks](#bitmasks) (2)
 - [brute force](#brute-force) (6)
@@ -45,6 +45,7 @@
 | 2283B | [Rhythmic String](https://codeforces.com/contest/2283/problem/B) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/B%20-%20Rhythmic%20String/solution.cpp) |
 | 2283C | [Big XOR](https://codeforces.com/contest/2283/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/C%20-%20Big%20XOR/solution.cpp) |
 | 2283D | [Black, Gray and White](https://codeforces.com/contest/2283/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/D%20-%20Black%2C%20Gray%20and%20White/solution.cpp) |
+| 2283E | [Partition of a Binary String](https://codeforces.com/contest/2283/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2283/E%20-%20Partition%20of%20a%20Binary%20String/solution.cpp) |
 
 ### binary search
 
