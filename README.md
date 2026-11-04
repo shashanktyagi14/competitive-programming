@@ -6,18 +6,18 @@
 
 | Total Problems | Topics |
 |---|---|
-| 28 | 21 |
+| 29 | 21 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [binary search](#binary-search) (5)
+- [binary search](#binary-search) (6)
 - [bitmasks](#bitmasks) (2)
-- [brute force](#brute-force) (5)
+- [brute force](#brute-force) (6)
 - [combinatorics](#combinatorics) (3)
 - [constructive algorithms](#constructive-algorithms) (8)
-- [data structures](#data-structures) (3)
+- [data structures](#data-structures) (4)
 - [dfs and similar](#dfs-and-similar) (5)
 - [dp](#dp) (9)
 - [dsu](#dsu) (3)
@@ -26,8 +26,8 @@
 - [greedy](#greedy) (16)
 - [hashing](#hashing) (2)
 - [implementation](#implementation) (4)
-- [math](#math) (7)
-- [number theory](#number-theory) (4)
+- [math](#math) (8)
+- [number theory](#number-theory) (5)
 - [sortings](#sortings) (2)
 - [strings](#strings) (2)
 - [ternary search](#ternary-search) (1)
@@ -40,6 +40,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2044F | [Easy Demon Problem](https://codeforces.com/contest/2044/problem/F) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2044/F%20-%20Easy%20Demon%20Problem/solution.cpp) |
 | 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
 | 2272E | [Memory Cell Interception](https://codeforces.com/contest/2272/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/E%20-%20Memory%20Cell%20Interception/solution.cpp) |
 | 2275D | [Precision Alignment](https://codeforces.com/contest/2275/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/D%20-%20Precision%20Alignment/solution.cpp) |
@@ -57,6 +58,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2044F | [Easy Demon Problem](https://codeforces.com/contest/2044/problem/F) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2044/F%20-%20Easy%20Demon%20Problem/solution.cpp) |
 | 2272A | [Maximize One MEX](https://codeforces.com/contest/2272/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/A%20-%20Maximize%20One%20MEX/solution.cpp) |
 | 2272D | [Connecting the Conflicts](https://codeforces.com/contest/2272/problem/D) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/D%20-%20Connecting%20the%20Conflicts/solution.cpp) |
 | 2275D | [Precision Alignment](https://codeforces.com/contest/2275/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/D%20-%20Precision%20Alignment/solution.cpp) |
@@ -88,6 +90,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2044F | [Easy Demon Problem](https://codeforces.com/contest/2044/problem/F) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2044/F%20-%20Easy%20Demon%20Problem/solution.cpp) |
 | 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
 | 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
@@ -179,6 +182,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2044F | [Easy Demon Problem](https://codeforces.com/contest/2044/problem/F) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2044/F%20-%20Easy%20Demon%20Problem/solution.cpp) |
 | 2273B | [Robot Championship](https://codeforces.com/contest/2273/problem/B) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2273/B%20-%20Robot%20Championship/solution.cpp) |
 | 2275F | [Tea Blend](https://codeforces.com/contest/2275/problem/F) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/F%20-%20Tea%20Blend/solution.cpp) |
 | 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
@@ -191,6 +195,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2044F | [Easy Demon Problem](https://codeforces.com/contest/2044/problem/F) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2044/F%20-%20Easy%20Demon%20Problem/solution.cpp) |
 | 2275F | [Tea Blend](https://codeforces.com/contest/2275/problem/F) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/F%20-%20Tea%20Blend/solution.cpp) |
 | 2276C | [Subarrays](https://codeforces.com/contest/2276/problem/C) | 1100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/C%20-%20Subarrays/solution.cpp) |
 | 2278F | [Modulo and Counting](https://codeforces.com/contest/2278/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/F%20-%20Modulo%20and%20Counting/solution.cpp) |
