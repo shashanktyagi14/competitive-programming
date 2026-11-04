@@ -6,30 +6,31 @@
 
 | Total Problems | Topics |
 |---|---|
-| 27 | 20 |
+| 28 | 21 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [binary search](#binary-search) (4)
+- [binary search](#binary-search) (5)
 - [bitmasks](#bitmasks) (2)
 - [brute force](#brute-force) (5)
 - [combinatorics](#combinatorics) (3)
 - [constructive algorithms](#constructive-algorithms) (8)
-- [data structures](#data-structures) (2)
+- [data structures](#data-structures) (3)
 - [dfs and similar](#dfs-and-similar) (5)
 - [dp](#dp) (9)
-- [dsu](#dsu) (2)
+- [dsu](#dsu) (3)
 - [games](#games) (2)
-- [graphs](#graphs) (1)
-- [greedy](#greedy) (15)
+- [graphs](#graphs) (2)
+- [greedy](#greedy) (16)
 - [hashing](#hashing) (2)
 - [implementation](#implementation) (4)
-- [math](#math) (6)
+- [math](#math) (7)
 - [number theory](#number-theory) (4)
-- [sortings](#sortings) (1)
+- [sortings](#sortings) (2)
 - [strings](#strings) (2)
+- [ternary search](#ternary-search) (1)
 - [trees](#trees) (4)
 - [two pointers](#two-pointers) (1)
 
@@ -42,6 +43,7 @@
 | 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
 | 2272E | [Memory Cell Interception](https://codeforces.com/contest/2272/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/E%20-%20Memory%20Cell%20Interception/solution.cpp) |
 | 2275D | [Precision Alignment](https://codeforces.com/contest/2275/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/D%20-%20Precision%20Alignment/solution.cpp) |
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2277D1 | [Number Operating (Easy Version)](https://codeforces.com/contest/2277/problem/D1) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/D1%20-%20Number%20Operating%20(Easy%20Version)/solution.cpp) |
 
 ### bitmasks
@@ -86,6 +88,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
 | 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
 
@@ -117,6 +120,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
 | 2277F | [Token Re-Moving](https://codeforces.com/contest/2277/problem/F) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/F%20-%20Token%20Re-Moving/solution.cpp) |
 
@@ -131,6 +135,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2276D | [Caveman](https://codeforces.com/contest/2276/problem/D) | 1400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/D%20-%20Caveman/solution.cpp) |
 
 ### greedy
@@ -142,6 +147,7 @@
 | 2272C | [Yet Another Black Cell Problem](https://codeforces.com/contest/2272/problem/C) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/C%20-%20Yet%20Another%20Black%20Cell%20Problem/solution.cpp) |
 | 2272E | [Memory Cell Interception](https://codeforces.com/contest/2272/problem/E) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2272/E%20-%20Memory%20Cell%20Interception/solution.cpp) |
 | 2275D | [Precision Alignment](https://codeforces.com/contest/2275/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/D%20-%20Precision%20Alignment/solution.cpp) |
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
 | 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
 | 2277A | [Subset Selecting](https://codeforces.com/contest/2277/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2277/A%20-%20Subset%20Selecting/solution.cpp) |
@@ -175,6 +181,7 @@
 |---|---------|------------|----------|
 | 2273B | [Robot Championship](https://codeforces.com/contest/2273/problem/B) | 1900 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2273/B%20-%20Robot%20Championship/solution.cpp) |
 | 2275F | [Tea Blend](https://codeforces.com/contest/2275/problem/F) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/F%20-%20Tea%20Blend/solution.cpp) |
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2276C | [Subarrays](https://codeforces.com/contest/2276/problem/C) | 1100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/C%20-%20Subarrays/solution.cpp) |
 | 2276F | [Permutation Coloring Game](https://codeforces.com/contest/2276/problem/F) | 2400 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/F%20-%20Permutation%20Coloring%20Game/solution.cpp) |
 | 2276G | [Elimination of Players](https://codeforces.com/contest/2276/problem/G) | 2100 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/G%20-%20Elimination%20of%20Players/solution.cpp) |
@@ -193,6 +200,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 | 2278A | [Fraction and Six](https://codeforces.com/contest/2278/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/A%20-%20Fraction%20and%20Six/solution.cpp) |
 
 ### strings
@@ -201,6 +209,12 @@
 |---|---------|------------|----------|
 | 2276E | [Good Substrings](https://codeforces.com/contest/2276/problem/E) | 1800 | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2276/E%20-%20Good%20Substrings/solution.cpp) |
 | 2278A | [Fraction and Six](https://codeforces.com/contest/2278/problem/A) | Unrated | [C++17 (GCC 7-32)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2278/A%20-%20Fraction%20and%20Six/solution.cpp) |
+
+### ternary search
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2275G | [Copper Squander](https://codeforces.com/contest/2275/problem/G) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/shashanktyagi14/competitive-programming/blob/HEAD/2275/G%20-%20Copper%20Squander/solution.cpp) |
 
 ### trees
 
