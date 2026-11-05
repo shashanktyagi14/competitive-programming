@@ -1,0 +1,17 @@
+name: C++ regression tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run sample regression suite
+        run: python3 tools/run_samples.py
