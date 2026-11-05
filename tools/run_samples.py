@@ -21,9 +21,15 @@ def run_case(case: dict, compiler: list[str], standard: str, build_dir: Path) ->
         print(f"FAIL {case['name']}: source not found: {case['source']}")
         return False
 
-    executable = build_dir / f"case_{abs(hash(case['name']))}"
-    compile_cmd = compiler + [f"-std={standard}", "-O2", "-pipe", str(source), "-o", str(executable)]
-    compiled = subprocess.run(compile_cmd, capture_output=True, text=True)
+    suffix = ".exe" if os.name == "nt" else ""
+    executable = build_dir / (f"case_{abs(hash(case['name']))}" + suffix)
+    command = compiler + [f"-std={standard}", "-O2", "-pipe", str(source), "-o", str(executable)]
+
+    try:
+        compiled = subprocess.run(command, capture_output=True, text=True)
+    except FileNotFoundError:
+        print(f"FAIL {case['name']}: compiler not found: {compiler[0]}")
+        return False
     if compiled.returncode:
         print(f"FAIL {case['name']}: compilation failed")
         print(compiled.stderr)
@@ -46,12 +52,10 @@ def run_case(case: dict, compiler: list[str], standard: str, build_dir: Path) ->
         print(completed.stderr)
         return False
 
-    actual = completed.stdout.split()
-    expected = case["expected"].split()
-    if actual != expected:
+    if completed.stdout.split() != case["expected"].split():
         print(f"FAIL {case['name']}")
-        print(f"  expected: {' '.join(expected)}")
-        print(f"  actual:   {' '.join(actual)}")
+        print(f"  expected: {' '.join(case['expected'].split())}")
+        print(f"  actual:   {' '.join(completed.stdout.split())}")
         return False
 
     print(f"PASS {case['name']}")
@@ -70,12 +74,10 @@ def main() -> int:
         print("CXX must name a C++ compiler.", file=sys.stderr)
         return 2
 
-    passed = 0
-    failed = 0
+    passed = failed = 0
     with tempfile.TemporaryDirectory(prefix="cp-regression-") as temp:
-        build_dir = Path(temp)
         for case in data.get("cases", []):
-            if run_case(case, compiler, data.get("compiler_standard", "c++17"), build_dir):
+            if run_case(case, compiler, data.get("compiler_standard", "c++17"), Path(temp)):
                 passed += 1
             else:
                 failed += 1
