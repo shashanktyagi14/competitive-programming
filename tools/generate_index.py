@@ -11,31 +11,43 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 OUTPUT = ROOT / "docs" / "INDEX.md"
-ROW = re.compile(
-    r"^\|\s*([^|]+?)\s*\|\s*\[([^]]+)\]\((https://codeforces\.com/contest/\d+/problem/[A-Z0-9]+)\)"
-    r"\s*\|\s*([^|]+?)\s*\|\s*\[[^]]+\]\((https://github\.com/[^)]+/blob/HEAD/[^)]+)\)\s*\|\s*$"
+PROBLEM_LINK = re.compile(
+    r"^\[([^\]]+)\]\((https://codeforces\.com/contest/(\d+)/problem/([A-Z0-9]+))\)$"
 )
+SOURCE_LINK = re.compile(r"^\[[^\]]+\]\((.*)\)$")
 
 
 def main() -> None:
-    text = README.read_text(encoding="utf-8")
     section = "Uncategorized"
     entries: dict[str, dict[str, dict[str, str]]] = defaultdict(dict)
 
-    for line in text.splitlines():
+    for line in README.read_text(encoding="utf-8").splitlines():
         if line.startswith("### "):
             section = line[4:].strip()
             continue
-        match = ROW.match(line)
-        if not match:
+        if not line.strip().startswith("|"):
             continue
-        problem_id, title, problem_url, difficulty, source_url = match.groups()
-        contest = problem_url.split("/")[4]
+
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) != 4 or cells[0] == "#" or cells[0].startswith("---"):
+            continue
+
+        problem = PROBLEM_LINK.fullmatch(cells[1])
+        source = SOURCE_LINK.fullmatch(cells[3])
+        if not problem or not source:
+            continue
+
+        title, problem_url, contest, _ = problem.groups()
+        source_url = source.group(1)
+        if "/blob/HEAD/" not in source_url:
+            continue
+        problem_id = cells[0]
         source_path = unquote(source_url.split("/blob/HEAD/", 1)[1])
+
         item = entries[contest].setdefault(problem_id, {
             "title": title,
             "problem_url": problem_url,
-            "difficulty": difficulty.strip(),
+            "difficulty": cells[2],
             "source_path": source_path,
             "topics": "",
         })
@@ -47,9 +59,12 @@ def main() -> None:
     lines = [
         "# Contest-wise Index",
         "",
-        "Generated from the topic tables in the root CFPusher README. The root README remains the canonical topic-wise index.",
+        f"Generated from the root CFPusher README. It currently tracks "
+        f"{sum(map(len, entries.values()))} unique problems across {len(entries)} Codeforces contests. "
+        "The root README remains the canonical topic-wise index.",
         "",
     ]
+
     for contest in sorted(entries, key=int, reverse=True):
         lines.extend([
             f"## Codeforces Round {contest}",
@@ -57,7 +72,10 @@ def main() -> None:
             "| Problem | Difficulty | Topics | Solution |",
             "|---|---:|---|---|",
         ])
-        for problem_id in sorted(entries[contest], key=lambda value: (int(re.match(r"\d+", value).group()), value)):
+        for problem_id in sorted(
+            entries[contest],
+            key=lambda value: (int(re.match(r"\d+", value).group()), value),
+        ):
             item = entries[contest][problem_id]
             source = "../" + item["source_path"].replace(" ", "%20")
             topics = item["topics"] or "Uncategorized"
