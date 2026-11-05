@@ -1,0 +1,41 @@
+{
+  "compiler_standard": "c++17",
+  "cases": [
+    {
+      "name": "Codeforces 2283A sample",
+      "source": "2283/A - Numbers on the Board/solution.cpp",
+      "input": "8\n0 0\n2 6\n-5 -3\n-2 2\n-2 3\n-2 5\n-6 2\n0 4\n",
+      "expected": "0\n4\n2\n0\n0\n2\n3\n3\n"
+    },
+    {
+      "name": "Codeforces 2283E sample",
+      "source": "2283/E - Partition of a Binary String/solution.cpp",
+      "input": "3\n8\n10001000\n6\n000111\n8\n01010101\n",
+      "expected": "13 5\n8 4\n16 4\n"
+    },
+    {
+      "name": "Codeforces 2283F sample",
+      "source": "2283/F - Minimize the Graph/solution.cpp",
+      "input": "5\n5\n1 1\n1 2\n2 3\n2 4\n6\n1 1\n1 1\n2 3\n2 3\n4 5\n5\n1 1\n1 2\n1 3\n1 4\n6\n1 1\n1 1\n1 1\n2 4\n2 4\n6\n1 1\n1 2\n1 1\n2 4\n3 5\n",
+      "expected": "4\n8\n4\n9\n6\n"
+    },
+    {
+      "name": "MEX of group maximums example",
+      "source": "practice/mex-of-group-maxima/solution.cpp",
+      "input": "8 2\n-1 0 0 1 1 2 2 9\n",
+      "expected": "3\n"
+    },
+    {
+      "name": "MEX of group maximums missing zero",
+      "source": "practice/mex-of-group-maxima/solution.cpp",
+      "input": "5 1\n1 1 2 3 4\n",
+      "expected": "0\n"
+    },
+    {
+      "name": "MEX of group maximums repeated values",
+      "source": "practice/mex-of-group-maxima/solution.cpp",
+      "input": "6 2\n0 0 1 1 2 2\n",
+      "expected": "3\n"
+    }
+  ]
+}
