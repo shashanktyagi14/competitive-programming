@@ -8,9 +8,13 @@ These notes explain the reasoning behind existing submissions in this repository
 
 If the interval [l,r] does not contain zero, all available values have the same sign. A retained number can equal the sum of all retained numbers only when it is the sole remaining value. Keeping one value is always possible, so the answer is r-l.
 
-When the interval contains zero, let p=l+r. The answer is max(0, |p|-1).
+When the interval contains zero, let p=l+r.
 
-The idea is to remove values from the longer side until the remaining interval's endpoint sum is either 0, 1, or -1. In those cases, the total sum of the remaining consecutive interval is itself one of its elements (zero when the endpoints sum to zero). The required number of removed elements is exactly the amount by which |l+r| exceeds one.
+- If p=0, the entire interval is symmetric around zero. Its sum is zero, so no deletion is needed.
+- If p>0, the positive endpoint r is farther from zero than -l. Keep the symmetric core [l,-l] and the endpoint r. The core sums to zero, so the sum of all retained values is r. Exactly p-1 values lie between -l and r and are deleted.
+- If p<0, symmetrically keep the endpoint l and the core [-r,r]. The retained values sum to l, and exactly |p|-1 values are deleted.
+
+Therefore the answer is max(0, |l+r|-1).
 
 - **Time:** O(1) per test case
 - **Extra space:** O(1)
